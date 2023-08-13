@@ -32,8 +32,8 @@ def main():
         # Detect object
         centers = centersall[num % len(centersall)]
         num += 1
-        if num==len(centersall):
-            break
+        # if num==len(centersall):
+        #     break
         if num > len(centersall):
             num = num % len(centersall)
         
