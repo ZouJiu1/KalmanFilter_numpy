@@ -38,6 +38,7 @@ class KalmanFilter(object):
         self.x = self.x + np.dot(K, z - np.dot(self.H, self.x))
         self.p = np.dot(np.eye(len(self.p)) - np.dot(K, self.H), self.p)
 
+# https://github.com/RahmadSadli/Kalman-Filter
 def main():
     dt = 0.1
     
